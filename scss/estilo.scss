@@ -1,0 +1,336 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+$colorcuerpo: #232E47;
+$colornav:#232e47c9;
+$tipografia: 'Montserrat', sans-serif;
+$colorhover: rgb(250, 173, 6);
+
+/*index.html*/
+
+.color-index{
+    background: $colorcuerpo;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 1325px;
+    height: 140px;
+}
+
+.logo-index{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+    a{
+        cursor: pointer;
+    }
+}
+
+.nav-usario-flex{
+    padding-top: 65px;
+    ul{
+        list-style: none;
+        display: flex;
+    }
+
+    a:hover{
+        color: $colorhover;
+        font-weight: 800;
+    }
+
+    .usuario-index{
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        font-family: $tipografia;
+        font-weight: 500;
+    }
+}
+
+.dropdown{
+    padding-top: 60px;
+    padding-right: 20px;
+    margin-left: -800px;
+    font-family: $tipografia;
+    font-weight: 700 ;
+    .btn{
+        background: rgba(255, 255, 255, 0);
+        border: none
+    }
+    
+    .btn:hover{
+        color: $colorhover;
+        font-weight: 800;
+        border: none
+    }
+}
+
+.contenedor-parrafo{
+    display: block;
+    position: absolute;
+    width:50%;
+    top: 50%;
+    .parrafo-index{
+        font-family: $tipografia;
+        font-weight:bolder;
+        text-align: left;
+        color:white;
+        line-height: 1.6;
+        padding-left: 20px;
+        font-size: 50px;
+    }
+    
+}
+
+.footer-index-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    li{
+        list-style: none;
+        margin-left: -10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 20px;
+    }
+
+    a:hover{
+        color: $colorhover;
+        font-weight: 600;
+    }
+    
+    .footer-redes-index{
+        display: flex;
+        justify-content: end;
+        margin-top: 50px;
+        padding-right: 20px;
+    }
+
+}
+
+.footer-copy{
+    color:white;
+    text-align: center;
+    font-family: $tipografia;
+}
+
+/*nosotros.html*/
+
+.color-nosotros{
+    background: $colorcuerpo;
+}
+
+.nav-usario-flex-nosotros{
+    padding-top: 65px;
+    font-family: $tipografia;
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        text-align: center;
+        margin: 10px;
+    }
+
+    a:hover{
+        color: $colorhover;
+        font-weight: bold;
+    }
+}
+
+.Quienes-somos{
+    @extend .contenedor-parrafo;
+    margin-left: 20px;
+    text-align: left;
+    background: $colornav;
+    padding: 20px;
+    border-radius: 10px;
+    .titulo-prin{
+        color: $colorhover;
+        font-family: $tipografia;
+        font-weight: bolder;
+    }
+    .parrafo{
+        color:white;
+        font-family: $tipografia;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+.clientes{
+    color: white;
+    font-family: $tipografia;
+    background-color: #232e47b4;
+    text-align: center;
+    width: 1340px;
+    height: 200px;
+    background-image: url(../multimedia/img/nuestros-clientes.png);
+    background-position:bottom;
+    animation: slider 20s infinite linear;
+
+    @keyframes slider {
+        to{
+            background-position: 1275px;
+        } 
+    }
+}
+
+/*producto.html*/
+
+.color-producto{
+    background-image: url(../multimedia/img/bastones-producto.jpg);
+    background-size:cover;
+}
+
+.muestra-producto{
+    display: flex;
+    justify-content:center;
+    h1{
+        color: white;
+        font-family: $tipografia;
+        font-weight: 900;
+        position: absolute;
+        top: 30%;
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    align-items: center;
+}
+
+.plancha20{
+    width: 250px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.863);
+    margin-left: 50px;
+    border-radius: 15px;
+    img{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    p{
+        color: black;
+        font-family: $tipografia;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 10px;
+    }
+    p:hover{
+        color: white;
+        background: #232e47c9;
+        width: 250px;
+        height: 80px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+.plancha10{
+    @extend .plancha20;
+}
+
+.cilindro5{
+    @extend .plancha20;
+    img{
+        margin-left: 85px;
+    }
+}
+
+.footer-producto-flex{
+    @extend .footer-index-flex;
+    position: absolute;
+    top: 100%;
+    width: 1342px;
+    height: 244px;
+    background: $colorcuerpo;
+}
+
+.footer-copy-producto{
+    @extend .footer-copy;
+    position: absolute;
+    top:131%;
+    margin-left: 150px;
+}
+
+/*contacto.html*/
+
+.color-contacto{
+    background: $colorcuerpo;
+}
+
+.contacto-container{
+    display: flex;
+    
+    .mapa{
+        position: absolute;
+        left: 53%;
+        top: 23%;
+
+        p{
+            color: white;
+            font-family: $tipografia;
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    }
+}
+
+.formulario{
+    width: 410px;
+    height: 500px;
+    background: #194abe;
+    border-radius: 10px;
+    margin-left: 30px;
+    position: absolute;
+    top:23%;
+
+    .mb-3-cuerpo{
+        width: 390px;
+        padding-left: 20px;
+    }
+    
+    .nombre{
+        padding-top: 20px;
+        color: white;
+    }
+    
+    .form-label{
+        font-family:$tipografia;
+        font-weight: 600;
+        font-size:15px;
+    }
+    
+    .form-floating{
+        width: 390px;
+        padding-left: 20px;
+    }
+    
+    
+    
+}
+
+.boton{
+    margin-top: 20px;
+    margin-left: 84px;
+    
+}
+
