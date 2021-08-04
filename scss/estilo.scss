@@ -324,13 +324,171 @@ $colorhover: rgb(250, 173, 6);
         padding-left: 20px;
     }
     
-    
-    
 }
 
 .boton{
     margin-top: 20px;
     margin-left: 84px;
-    
 }
+
+/*Iniciarsesion.html*/
+
+.color-iniciosesion{
+    background: $colorcuerpo;
+}
+
+.logo-inicio-sesion{
+    position: relative;
+    left: 43%;
+    top: 70px;
+}
+
+.cuerpo-ingresar{
+    width: 509px ;
+    height: 500px;
+    background: white;
+    margin-left: 400px;
+    border-radius: 15px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    h1{
+        text-align: center;
+        font-family: $tipografia;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    .caja-usuario{
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+        outline: none;
+        border-bottom: solid 1px grey;
+    }
+    
+    .caja-usario:hover{
+        border-bottom: solid 3px rgb(63, 63, 63);
+    }
+
+    .caja-contraseña{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: solid 1px grey;
+    }
+
+    .flex-inicio{
+        display: flex;
+        justify-content: space-between;
+
+        .checkbox{
+            margin-top: 20px;
+        } 
+        
+        .recordar{
+            font-family: $tipografia;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        
+        .olvidar-contraseña{
+            font-family: $tipografia;
+            font-weight: 600;
+            font-size: 12px;
+            margin-top: 20px;
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .btn{
+        background-color: #232E47;
+        color: white;
+        font-family: $tipografia;
+    }
+
+    .btn:hover{
+        color: white;
+        background: #3e5690;
+    }
+
+    .boton-inicio-s{
+        margin-top: 5px;
+        margin-left: 125px;
+    }
+
+    .direccion-registro{
+        margin-top: 10px;
+        font-family: $tipografia;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+
+.inicio-sesion-redes{
+    display: flex;
+    justify-content: space-around;
+
+    .boton-google{
+        width: 109px;
+        height: 38px;
+        background: white;
+        border-style: 1px rgb(165, 164, 164);
+        border-radius: 5px;
+    }
+
+    .boton-google:hover{
+        background: rgba(211, 211, 211, 0.466);
+    }
+
+    .boton-facebook{
+        @extend .boton-google;
+        background: rgb(20, 20, 165);
+        border: none;
+    }
+
+    .boton-facebook:hover{
+        background: rgb(22, 22, 231) ;
+    }
+}
+
+/*registrarse.html*/
+
+.cuerpo-registrarse{
+    @extend .cuerpo-ingresar;
+    height: 600px;
+
+    .flex-Registro{
+        display: flex;
+        justify-content: space-around;
+    
+        .checkbox-registro{
+            margin-top: 15px;
+        }
+        .Terminos{
+            margin-top: 13px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+            font-family: $tipografia;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    .boton-registro-s{
+        @extend .boton-inicio-s;
+        margin-left: 118px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px; }
@@ -243,3 +244,108 @@
 .boton {
   margin-top: 20px;
   margin-left: 84px; }
+
+/*Iniciarsesion.html*/
+.color-iniciosesion {
+  background: #232E47; }
+
+.logo-inicio-sesion {
+  position: relative;
+  left: 43%;
+  top: 70px; }
+
+.cuerpo-ingresar, .cuerpo-registrarse {
+  width: 509px;
+  height: 500px;
+  background: white;
+  margin-left: 400px;
+  border-radius: 15px;
+  padding-left: 64px;
+  padding-right: 64px; }
+  .cuerpo-ingresar h1, .cuerpo-registrarse h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+    padding-bottom: 10px; }
+  .cuerpo-ingresar .caja-usuario, .cuerpo-registrarse .caja-usuario {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px grey; }
+  .cuerpo-ingresar .caja-usario:hover, .cuerpo-registrarse .caja-usario:hover {
+    border-bottom: solid 3px #3f3f3f; }
+  .cuerpo-ingresar .caja-contraseña, .cuerpo-registrarse .caja-contraseña {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px grey; }
+  .cuerpo-ingresar .flex-inicio, .cuerpo-registrarse .flex-inicio {
+    display: flex;
+    justify-content: space-between; }
+    .cuerpo-ingresar .flex-inicio .checkbox, .cuerpo-registrarse .flex-inicio .checkbox {
+      margin-top: 20px; }
+    .cuerpo-ingresar .flex-inicio .recordar, .cuerpo-registrarse .flex-inicio .recordar {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 12px; }
+    .cuerpo-ingresar .flex-inicio .olvidar-contraseña, .cuerpo-registrarse .flex-inicio .olvidar-contraseña {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      margin-top: 20px; }
+      .cuerpo-ingresar .flex-inicio .olvidar-contraseña a, .cuerpo-registrarse .flex-inicio .olvidar-contraseña a {
+        text-decoration: none; }
+  .cuerpo-ingresar .btn, .cuerpo-registrarse .btn {
+    background-color: #232E47;
+    color: white;
+    font-family: "Montserrat", sans-serif; }
+  .cuerpo-ingresar .btn:hover, .cuerpo-registrarse .btn:hover {
+    color: white;
+    background: #3e5690; }
+  .cuerpo-ingresar .boton-inicio-s, .cuerpo-registrarse .boton-inicio-s, .cuerpo-registrarse .boton-registro-s {
+    margin-top: 5px;
+    margin-left: 125px; }
+  .cuerpo-ingresar .direccion-registro, .cuerpo-registrarse .direccion-registro {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+    .cuerpo-ingresar .direccion-registro a, .cuerpo-registrarse .direccion-registro a {
+      text-decoration: none;
+      font-weight: 600; }
+
+.inicio-sesion-redes {
+  display: flex;
+  justify-content: space-around; }
+  .inicio-sesion-redes .boton-google, .inicio-sesion-redes .boton-facebook {
+    width: 109px;
+    height: 38px;
+    background: white;
+    border-style: 1px #a5a4a4;
+    border-radius: 5px; }
+  .inicio-sesion-redes .boton-google:hover, .inicio-sesion-redes .boton-facebook:hover {
+    background: rgba(211, 211, 211, 0.466); }
+  .inicio-sesion-redes .boton-facebook {
+    background: #1414a5;
+    border: none; }
+  .inicio-sesion-redes .boton-facebook:hover {
+    background: #1616e7; }
+
+/*registrarse.html*/
+.cuerpo-registrarse {
+  height: 600px; }
+  .cuerpo-registrarse .flex-Registro {
+    display: flex;
+    justify-content: space-around; }
+    .cuerpo-registrarse .flex-Registro .checkbox-registro {
+      margin-top: 15px; }
+    .cuerpo-registrarse .flex-Registro .Terminos {
+      margin-top: 13px;
+      margin-left: 5px;
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 600; }
+  .cuerpo-registrarse .boton-registro-s {
+    margin-left: 118px;
+    margin-bottom: 10px; }
