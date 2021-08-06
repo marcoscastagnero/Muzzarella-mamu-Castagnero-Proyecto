@@ -64,28 +64,28 @@
     padding-left: 20px;
     font-size: 50px; }
 
-.footer-index-flex, .footer-producto-flex {
+.footer-index-flex, .footer-producto-flex, .footer-producto-flex-contacto {
   display: flex;
   justify-content: space-between;
   padding-top: 30px; }
-  .footer-index-flex li, .footer-producto-flex li {
+  .footer-index-flex li, .footer-producto-flex li, .footer-producto-flex-contacto li {
     list-style: none;
     margin-left: -10px; }
-  .footer-index-flex a, .footer-producto-flex a {
+  .footer-index-flex a, .footer-producto-flex a, .footer-producto-flex-contacto a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: 20px; }
-  .footer-index-flex a:hover, .footer-producto-flex a:hover {
+  .footer-index-flex a:hover, .footer-producto-flex a:hover, .footer-producto-flex-contacto a:hover {
     color: #faad06;
     font-weight: 600; }
-  .footer-index-flex .footer-redes-index, .footer-producto-flex .footer-redes-index {
+  .footer-index-flex .footer-redes-index, .footer-producto-flex .footer-redes-index, .footer-producto-flex-contacto .footer-redes-index {
     display: flex;
     justify-content: end;
     margin-top: 50px;
     padding-right: 20px; }
 
-.footer-copy, .footer-copy-producto {
+.footer-copy, .footer-copy-producto, .footer-copy-contacto {
   color: white;
   text-align: center;
   font-family: "Montserrat", sans-serif; }
@@ -108,6 +108,8 @@
   .nav-usario-flex-nosotros a:hover {
     color: #faad06;
     font-weight: bold; }
+  .nav-usario-flex-nosotros .icono-carrito {
+    margin-top: -18px; }
 
 .Quienes-somos {
   margin-left: 20px;
@@ -190,14 +192,14 @@
 .cilindro5 img {
   margin-left: 85px; }
 
-.footer-producto-flex {
+.footer-producto-flex, .footer-producto-flex-contacto {
   position: absolute;
   top: 100%;
   width: 1342px;
   height: 244px;
   background: #232E47; }
 
-.footer-copy-producto {
+.footer-copy-producto, .footer-copy-contacto {
   position: absolute;
   top: 131%;
   margin-left: 150px; }
@@ -221,12 +223,17 @@
 
 .formulario {
   width: 410px;
-  height: 500px;
+  height: 570px;
   background: #194abe;
   border-radius: 10px;
   margin-left: 30px;
   position: absolute;
   top: 23%; }
+  .formulario h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: none; }
   .formulario .mb-3-cuerpo {
     width: 390px;
     padding-left: 20px; }
@@ -244,6 +251,12 @@
 .boton {
   margin-top: 20px;
   margin-left: 84px; }
+
+.footer-producto-flex-contacto {
+  top: 110%; }
+
+.footer-copy-contacto {
+  top: 140%; }
 
 /*Iniciarsesion.html*/
 .color-iniciosesion {
@@ -349,3 +362,151 @@
   .cuerpo-registrarse .boton-registro-s {
     margin-left: 118px;
     margin-bottom: 10px; }
+
+/*registrarse.html*/
+.cuerpo-error-404 {
+  background-color: #232E47; }
+
+.img-error {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.texto-error {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+  .texto-error h1 {
+    font-size: 80px;
+    font-weight: 900; }
+  .texto-error p {
+    font-size: 30px; }
+
+.boton-error {
+  display: flex;
+  justify-content: center; }
+  .boton-error .boton-volver-menu {
+    width: 236px;
+    height: 50px;
+    border: white solid 2px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 50px; }
+  .boton-error .boton-volver-menu:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none; }
+
+/*media queries*/
+@media screen and (max-width: 1024px) {
+  /*index.html*/
+  .header-flex {
+    width: 800px;
+    height: 140px; }
+  .contenedor-parrafo, .Quienes-somos {
+    top: 40%; }
+  /*nosotros.html*/
+  .nav-usario-flex-nosotros {
+    width: 1000px;
+    margin-right: -600px; }
+    .nav-usario-flex-nosotros ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-left: 400px; }
+  /*producto.html*/
+  .icono-carrito {
+    position: absolute;
+    top: 144%;
+    left: 109%; }
+  .footer-producto-flex, .footer-producto-flex-contacto {
+    width: 1000px; }
+  /*contacto.html*/
+  .nav-usario-flex-nosotros {
+    padding-top: 10px; }
+    .nav-usario-flex-nosotros .icono-carrito {
+      position: absolute;
+      top: 105%; }
+  /*iniciarsesion.html*/
+  .cuerpo-ingresar, .cuerpo-registrarse {
+    margin-left: 260px; } }
+
+@media screen and (max-width: 600px) {
+  /*index.html*/
+  .header-flex {
+    width: 400px;
+    height: 190px;
+    flex-direction: column; }
+  .contenedor-parrafo, .Quienes-somos {
+    top: 35%; }
+  /*nosotros.html*/
+  .nav-usario-flex-nosotros {
+    width: 600px; }
+    .nav-usario-flex-nosotros ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-left: 400px;
+      margin-top: -160px; }
+  .Quienes-somos {
+    top: 30%;
+    width: 400px; }
+  /*producto.html*/
+  .container {
+    display: flex;
+    flex-direction: column; }
+  .icono-carrito {
+    position: absolute;
+    top: 95%;
+    left: 115%; }
+  .footer-producto-flex, .footer-producto-flex-contacto {
+    top: 200%;
+    width: 600px;
+    height: 300px; }
+  .footer-copy-producto, .footer-copy-contacto {
+    top: 230%;
+    padding-right: 50px; }
+  /*contacto.html*/
+  .contacto-container {
+    display: flex;
+    flex-direction: column; }
+  /*iniciarsesion.html*/
+  .cuerpo-ingresar, .cuerpo-registrarse {
+    margin-left: 70px; } }
+
+@media screen and (max-width: 480px) {
+  /*index.html*/
+  .header-flex {
+    width: 200px;
+    height: 190px;
+    flex-direction: column; }
+  .contenedor-parrafo, .Quienes-somos {
+    top: 30%; }
+  /*nosotros.html*/
+  .nav-usario-flex-nosotros {
+    width: 200px; }
+    .nav-usario-flex-nosotros ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-left: 300px;
+      margin-top: -160px; }
+  .Quienes-somos {
+    top: 30%;
+    width: 300px; }
+  /*producto.html*/
+  .icono-carrito {
+    position: absolute;
+    top: 20%;
+    left: 180%; }
+  .footer-producto-flex, .footer-producto-flex-contacto {
+    width: 500px;
+    height: 350px; }
+  /*contacto.html*/
+  /*iniciarsesion.html*/
+  .cuerpo-ingresar, .cuerpo-registrarse {
+    margin-left: 15px; } }
